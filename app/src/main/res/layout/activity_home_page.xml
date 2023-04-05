@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomePage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/button_border">
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FFFFFF"
+                android:id="@+id/destination_search"
+                ></SearchView>
+
+            <Button
+                android:layout_width="match_parent"
+
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:background="#f5059efd"
+                android:text="Search"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/my_search_button"
+                android:textColor="#FFFF"
+
+
+
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Popular Destinations In Bangladesh"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/popularPlaceRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:background="@drawable/hotel1">
+
+            <Button
+                android:id="@+id/goToMap"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="#f5059efd"
+                android:gravity="center"
+                android:text="Map"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FFFF"
+                android:onClick="gotomap"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:background="@drawable/hotel1">
+
+            <Button
+                android:id="@+id/user_signbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="#f5059efd"
+                android:gravity="center"
+                android:text="Create Account or Sign up"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FFFF"
+                android:onClick="gotousersignup"
+                android:layout_alignBottom="@+id/bottomBar"/>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:background="@drawable/hotel1">
+
+            <Button
+                android:id="@+id/admin_signbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="#f5059efd"
+                android:gravity="center"
+                android:text="Create Account or Sign up for hotel "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FFFF"
+                android:onClick="gotoadminsignup"
+                android:layout_alignBottom="@+id/bottomBar"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

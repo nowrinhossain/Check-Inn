@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hotelRoomsActivity"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/coverImage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/hotelName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#008FFF"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        tools:fontFamily="sans-serif-condensed" />
+
+    <Button
+        android:id="@+id/viewHotelInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:onClick="viewHotelInfo"
+        android:text="View Hotel Details"
+        android:textColor="#0000FF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/roomRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+
+
+</LinearLayout>

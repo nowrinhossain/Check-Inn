@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddHotel">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp" />
+
+
+        <Button
+            android:id="@+id/btnChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgView"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="Choose" />
+
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgView"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            android:onClick="onClick2"
+            android:text="save" />
+
+
+        <TextView
+            android:id="@+id/hotelName_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgView"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="3dp"
+            android:textSize="20dp"
+            android:text="Hotel Name: " />
+
+
+
+
+
+        <EditText
+            android:id="@+id/hotel_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hotel Name"
+            android:layout_below="@id/imgView"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20dp"
+            android:background="@drawable/text_box"/>
+
+
+
+        <TextView
+            android:id="@+id/address_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotel_name"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="3dp"
+            android:textSize="20dp"
+            android:text="Address" />
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hotel_name"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20dp"
+            android:hint="Location"
+            android:background="@drawable/text_box"/>
+
+
+        <EditText
+            android:id="@+id/City"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20dp"
+            android:hint="City"
+            android:background="@drawable/text_box"/>
+
+
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/City"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20dp"
+            android:hint="Country"
+            android:background="@drawable/text_box"/>
+
+
+        <TextView
+            android:id="@+id/mail_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/country"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="3dp"
+            android:textSize="20dp"
+            android:text="Mail-account" />
+
+
+        <EditText
+            android:id="@+id/mail_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_below="@id/country"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20dp"
+            android:background="@drawable/text_box"/>
+
+
+        <TextView
+            android:id="@+id/website_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mail_editText"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="3dp"
+            android:textSize="20dp"
+            android:text="Website" />
+
+
+        <EditText
+            android:id="@+id/websiteLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Link"
+            android:layout_below="@id/mail_editText"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20dp"
+            android:background="@drawable/text_box"/>
+
+
+        <TextView
+            android:id="@+id/contacts_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/websiteLink"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="30dp"
+            android:text="Contacts"
+            android:textSize="20dp"/>
+
+        <ListView
+            android:id="@+id/contactList"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/websiteLink"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/contactInput"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:hint="Phone No."
+            android:layout_below="@id/contactList"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            android:textSize="20dp"
+            android:background="@drawable/text_box"/>
+
+
+        <Button
+            android:id="@+id/phnNoSave_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactList"
+            android:layout_marginTop="10dp"
+            android:text="Add"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/request_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactInput"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:onClick="onClick3"
+            android:text="Send Request"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
